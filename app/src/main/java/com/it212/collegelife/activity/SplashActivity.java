@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 
 import com.it212.collegelife.R;
 import com.it212.collegelife.utils.Model;
@@ -15,12 +16,12 @@ public class SplashActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-//        Model.getInstance().getClobeThreadPool().execute(new Runnable() {
-//            @Override
-//            public void run() {
-//
-//            }
-//        });
+        Model.getInstance().getClobeThreadPool().execute(new Runnable() {
+            @Override
+            public void run() {
+                Log.e("ss","ddd");
+            }
+        });
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
