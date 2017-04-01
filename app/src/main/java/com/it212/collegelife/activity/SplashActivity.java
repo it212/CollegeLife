@@ -20,6 +20,7 @@ public class SplashActivity extends Activity {
             @Override
             public void run() {
                 Log.e("ss","ddd");
+                Log.e("ss","ddd");
             }
         });
         new Handler().postDelayed(new Runnable() {
