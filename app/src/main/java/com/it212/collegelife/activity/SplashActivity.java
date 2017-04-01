@@ -15,12 +15,12 @@ public class SplashActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        Model.getInstance().getClobeThreadPool().execute(new Runnable() {
-            @Override
-            public void run() {
-
-            }
-        });
+//        Model.getInstance().getClobeThreadPool().execute(new Runnable() {
+//            @Override
+//            public void run() {
+//
+//            }
+//        });
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
